@@ -50,5 +50,4 @@ while len(guessed_states) < 50:
 missing_states = [state for state in all_states if state not in guessed_states]
 
 states_to_learn = pandas.DataFrame(missing_states)
-print(states_to_learn)
 states_to_learn.to_csv("states_to_learn.csv")
